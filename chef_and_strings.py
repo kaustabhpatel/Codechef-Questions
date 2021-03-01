@@ -1,0 +1,1 @@
+T = int(input())for i in range(T):    N = int(input())    S = list(map(int,input().split()))    skip = 0    for j in range(N-1):        diff = abs(S[j] - S[j+1])        skip = skip + diff - 1    print (skip)
